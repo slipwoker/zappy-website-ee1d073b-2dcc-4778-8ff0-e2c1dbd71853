@@ -234,6 +234,285 @@
     <script src="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.umd.js"></script>
     <!-- Mickidum Accessibility Toolbar -->
     <script src="https://cdn.jsdelivr.net/gh/mickidum/acc_toolbar/acctoolbar/acctoolbar.min.js"></script>
+
+<style data-zappy-section-v2-css="true">
+/* V2 Regenerated Section CSS */
+.index-hero-section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: visible;
+  background-color: #1F2A44;
+  color: var(--text-light);
+}
+
+/* Background Image Layer */
+.index-hero-section .hero-bg-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.index-hero-section .hero-bg-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: saturate(0.95) contrast(0.95);
+}
+
+/* Scrim Overlay for Text Legibility */
+.index-hero-section .hero-scrim {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(31, 42, 68, 0.25) 0%, rgba(31, 42, 68, 0.75) 60%, rgba(31, 42, 68, 0.85) 100%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Content Overlay */
+.index-hero-section .hero-content-wrapper {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.index-hero-section .hero-content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  max-width: 900px;
+}
+
+/* Text Group */
+.index-hero-section .hero-text-group {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+
+.index-hero-section .hero-headline {
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: var(--text-light);
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.4), 0 2px 8px rgba(0, 0, 0, 0.3);
+  margin: 0;
+}
+
+.index-hero-section .hero-subtitle {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.6;
+  color: var(--text-light);
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+  margin: 0;
+  opacity: 0.95;
+}
+
+/* CTA Group */
+.index-hero-section .hero-cta-group {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.index-hero-section .hero-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 32px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 280ms ease;
+  white-space: nowrap;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.index-hero-section .btn-primary {
+  background: var(--primary);
+  color: var(--text-light);
+  border: 2px solid var(--primary);
+  box-shadow: 0 4px 16px rgba(47, 107, 255, 0.3);
+}
+
+.index-hero-section .btn-primary:hover {
+  background: #1E5DB8;
+  border-color: #1E5DB8;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(47, 107, 255, 0.4);
+}
+
+.index-hero-section .btn-secondary {
+  background: rgba(255, 255, 255, 0.15);
+  color: var(--text-light);
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.index-hero-section .btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.25);
+  border-color: rgba(255, 255, 255, 0.6);
+  transform: translateY(-2px);
+}
+
+.index-hero-section .cta-icon {
+  width: 20px;
+  height: 20px;
+  transition: transform 280ms ease;
+}
+
+.index-hero-section .btn-primary:hover .cta-icon {
+  transform: translateX(-3px);
+}
+
+/* Trust Indicators Strip */
+.index-hero-section .hero-trust-strip {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-top: 1px solid var(--border-light);
+  padding: 20px 32px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  z-index: 15;
+}
+
+.index-hero-section .trust-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text-dark);
+}
+
+.index-hero-section .trust-icon {
+  width: 24px;
+  height: 24px;
+  color: var(--primary);
+  flex-shrink: 0;
+}
+
+.index-hero-section .trust-text {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-dark);
+  white-space: nowrap;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .index-hero-section {
+    min-height: 100vh;
+  }
+  
+  .index-hero-section .hero-content-wrapper {
+    padding: 100px 16px 140px;
+    min-height: 100vh;
+  }
+  
+  .index-hero-section .hero-content-container {
+    gap: 32px;
+  }
+  
+  .index-hero-section .hero-text-group {
+    gap: 16px;
+  }
+  
+  .index-hero-section .hero-headline {
+    font-size: 36px;
+    line-height: 1.2;
+  }
+  
+  .index-hero-section .hero-subtitle {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  .index-hero-section .hero-cta-group {
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+  }
+  
+  .index-hero-section .hero-cta {
+    width: 100%;
+    padding: 14px 24px;
+    font-size: 15px;
+  }
+  
+  .index-hero-section .hero-trust-strip {
+    padding: 16px;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+  
+  .index-hero-section .trust-item {
+    gap: 8px;
+  }
+  
+  .index-hero-section .trust-icon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .index-hero-section .trust-text {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .index-hero-section .hero-headline {
+    font-size: 32px;
+  }
+  
+  .index-hero-section .hero-subtitle {
+    font-size: 15px;
+  }
+  
+  .index-hero-section .hero-trust-strip {
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+  }
+}
+</style>
     <link rel="stylesheet" href="/styles.css">
 
     <style id="zappy-dropdown-submenu-styles">
@@ -296,10 +575,10 @@
       <div class="search-wrapper">
         <input type="text" id="mobile-search-input" placeholder="חיפוש מוצרים..." autocomplete="off">
         <button class="search-submit" id="mobile-search-submit" title="חיפוש">
-          <svg width="20" height="20" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><path d="M21 21l-4.35-4.35"></path></svg>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><path d="M21 21l-4.35-4.35"></path></svg>
         </button>
         <button class="close-search" id="close-mobile-search">
-          <svg width="20" height="20" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"></path></svg>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"></path></svg>
         </button>
       </div>
       <div class="search-results" id="mobile-search-results"></div>
@@ -308,16 +587,16 @@
 <script>window.ZAPPY_WEBSITE_ID = "ee1d073b-2dcc-4778-8ff0-e2c1dbd71853";window.ZAPPY_API_BASE = (window.location.pathname.includes('/preview') ? "https://api.zappy5.com" : "https://api.zappy5.com");</script>
   <nav class="navbar" dir="rtl">
   <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
-    <svg class="hamburger-icon" width="24" height="24" viewbox="0 0 24 24" fill="none">
+    <svg class="hamburger-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
       <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
     </svg>
-    <svg class="close-icon" width="24" height="24" viewbox="0 0 24 24" fill="none" style="display:none;">
+    <svg class="close-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" style="display:none;">
       <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
     </svg>
   </button>
   
   <button class="phone-header-btn" aria-label="Call">
-    <svg width="20" height="20" viewbox="0 0 24 24" fill="currentColor">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
       <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
     </svg>
   </button>
@@ -334,7 +613,7 @@
     <li class="menu-item-has-children zappy-products-dropdown">
       <a href="/products">
         מוצרים
-        <svg class="dropdown-arrow" width="12" height="12" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <svg class="dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <path d="M6 9l6 6 6-6"></path>
         </svg>
       </a>
@@ -343,13 +622,13 @@
         <!-- Categories will be loaded dynamically -->
       </ul>
     </li>
-  <li><a href="/collections">קולקציות</a></li><li><a href="/product">מוצר</a></li><li><a href="/contact">צור קשר</a></li></ul><div class="nav-ecommerce-icons nav-icons-left"><a href="/login" class="login-link nav-login" title="התחברות"><svg class="login-icon" width="20" height="20" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg></a><a href="#cart" class="cart-link nav-cart" id="cart-drawer-toggle" title="עגלת קניות"><svg class="cart-icon" width="20" height="20" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg><span class="cart-count">0</span></a><div class="nav-search-box">
+  <li><a href="/collections">קולקציות</a></li><li><a href="/product">מוצר</a></li><li><a href="/contact">צור קשר</a></li></ul><div class="nav-ecommerce-icons nav-icons-left"><a href="/login" class="login-link nav-login" title="התחברות"><svg class="login-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg></a><a href="#cart" class="cart-link nav-cart" id="cart-drawer-toggle" title="עגלת קניות"><svg class="cart-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg><span class="cart-count">0</span></a><div class="nav-search-box">
     <input type="text" class="nav-search-input" id="nav-search-input" placeholder="חיפוש מוצרים..." autocomplete="off">
     <button class="nav-search-btn" id="nav-search-btn" title="חיפוש">
-      <svg class="search-icon" width="18" height="18" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><path d="M21 21l-4.35-4.35"></path></svg>
+      <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><path d="M21 21l-4.35-4.35"></path></svg>
     </button>
     <div class="nav-search-results" id="nav-search-results"></div>
-  </div></div><div class="nav-ecommerce-icons nav-icons-right"><button class="nav-search-toggle" id="mobile-search-toggle" title="חיפוש"><svg width="18" height="18" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><path d="M21 21l-4.35-4.35"></path></svg></button></div>
+  </div></div><div class="nav-ecommerce-icons nav-icons-right"><button class="nav-search-toggle" id="mobile-search-toggle" title="חיפוש"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><path d="M21 21l-4.35-4.35"></path></svg></button></div>
     
     
   </div>
@@ -389,36 +668,64 @@
 
   <!-- Bottom diagonal divider -->
   <div class="index-hero-section__divider-wrapper">
-    <svg data-no-icon-edit="true" aria-hidden="true" viewbox="0 0 1200 60" preserveaspectratio="none" xmlns="http://www.w3.org/2000/svg">
+    <svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 1200 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M0,60 L0,15 L1200,45 L1200,60 Z" fill="var(--bg-dark)"></path>
     </svg>
   </div>
-</section><section class="index-hero-section" data-layout-spec="בית-hero" data-hero-type="fullscreen-card" id="zappy-section-0-dup-1772318736526">
-  <!-- Full-bleed background image -->
-  <div class="index-hero-section__bg-wrapper">
-    <img data-hero-bg="true" data-placeholder="index-hero-bg" data-context="Bright, airy modern living room with natural light streaming through large windows, showcasing clean-lined furniture including a comfortable sofa, minimalist coffee table, and elegant shelving. Neutral color palette with warm wood tones and soft textiles. Professional interior photography with shallow depth of field, shot from a corner angle to show room depth. High-end residential furniture showroom aesthetic with plants and tasteful decor accents." class="index-hero-section__bg-image zappy-editable-image" width="1920" height="1080" src="/assets/site-index-hero-bg.webp" alt="חלל מגורים מודרני עם רהיטים מעוצבים" data-element-type="image" data-element-id="img-1772318416421-jxtaepqn3" data-resize-handler-attached="true">
+</section><section class="index-hero-section" data-layout-spec="בית-hero" data-hero-type="fullscreen-card" data-zappy-section="true">
+  <!-- Background Image Layer -->
+  <div class="hero-bg-wrapper">
+    <img data-hero-bg="true" alt="חלל מגורים מודרני עם רהיטים מעוצבים" class="hero-bg-image" src="/assets/site-index-hero-bg.webp" data-placeholder="index-hero-bg" data-context="Bright, airy modern living room with natural light streaming through large windows, showcasing clean-lined furniture including a comfortable sofa, minimalist coffee table, and elegant shelving. Neutral color palette with warm wood tones and soft textiles. Professional interior photography with shallow depth of field, shot from a corner angle to show room depth. High-end residential furniture showroom aesthetic with plants and tasteful decor accents." style="width: 100%; height: 100%; object-fit: cover; object-position: center;" data-zappy-editable-image="true">
   </div>
-
-  <!-- Gradient scrim for text legibility -->
-  <div class="index-hero-section__scrim" aria-hidden="true"></div>
-
-  <!-- Text overlay card (glassmorphism) -->
-  <div class="index-hero-section__content">
-    <div class="index-hero-section__glass-card">
-      <h1 class="index-hero-section__headline">רהיטים פשוטים, עיצוב שנשאר</h1>
-      <h3 class="index-hero-section__subtitle">עיצוב נקי, בנייה איכותית וייעוץ מהיר – הכל כדי שהבית שלך ירגיש בדיוק כמו שחלמת</h3>
-      <div class="index-hero-section__cta-group" style="text-align: center !important; display: flex !important; justify-content: center !important; align-items: flex-start !important; width: 100% !important;">
-        <a href="/collections" class="index-hero-section__btn index-hero-section__btn--primary" data-element-type="button" data-element-id="btn-1772318416418-plmc16l2i" data-native-element="true" style="outline: currentcolor;">גלה את הקולקציות</a>
-        <a href="/contact" class="index-hero-section__btn index-hero-section__btn--secondary btn btn-primary" data-element-type="button" data-element-id="btn-1772318416418-lnr2q0po2" data-native-element="true" style="outline: currentcolor; border-color: rgb(31, 122, 90) !important; color: rgb(255, 255, 255) !important; background-color: rgb(31, 122, 90) !important; background-image: none !important;">קבל ייעוץ עיצובי</a>
+  
+  <!-- Scrim Overlay for Text Legibility -->
+  <div class="hero-scrim" aria-hidden="true"></div>
+  
+  <!-- Content Overlay -->
+  <div class="hero-content-wrapper">
+    <div class="hero-content-container">
+      <div class="hero-text-group">
+        <h1 class="hero-headline">רהיטים פשוטים, עיצוב שנשאר</h1>
+        <h3 class="hero-subtitle">עיצוב נקי, בנייה איכותית וייעוץ מהיר – הכל כדי שהבית שלך ירגיש בדיוק כמו שחלמת</h3>
+      </div>
+      
+      <div class="hero-cta-group">
+        <a href="/collections" class="btn-primary hero-cta">
+          <span>גלה את הקולקציות</span>
+          <svg class="cta-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-no-icon-edit="true" aria-hidden="true">
+            <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </a>
+        <a href="/contact" class="btn-secondary hero-cta">
+          <span>קבל ייעוץ עיצובי</span>
+        </a>
       </div>
     </div>
   </div>
-
-  <!-- Bottom diagonal divider -->
-  <div class="index-hero-section__divider-wrapper">
-    <svg data-no-icon-edit="true" aria-hidden="true" viewbox="0 0 1200 60" preserveaspectratio="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0,60 L0,15 L1200,45 L1200,60 Z" fill="var(--bg-light)"></path>
-    </svg>
+  
+  <!-- Trust Indicators Strip -->
+  <div class="hero-trust-strip">
+    <div class="trust-item">
+      <svg class="trust-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-no-icon-edit="true" aria-hidden="true">
+        <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2"></path>
+        <path d="M8 12L11 15L16 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+      </svg>
+      <span class="trust-text">איכות מובטחת</span>
+    </div>
+    <div class="trust-item">
+      <svg class="trust-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-no-icon-edit="true" aria-hidden="true">
+        <path d="M3 9L12 2L21 9V20C21 20.5304 20.7893 21.0391 20.4142 21.4142C20.0391 21.7893 19.5304 22 19 22H5C4.46957 22 3.96086 21.7893 3.58579 21.4142C3.21071 21.0391 3 20.5304 3 20V9Z" stroke="currentColor" stroke-width="2"></path>
+        <path d="M9 22V12H15V22" stroke="currentColor" stroke-width="2"></path>
+      </svg>
+      <span class="trust-text">משלוח מהיר</span>
+    </div>
+    <div class="trust-item">
+      <svg class="trust-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-no-icon-edit="true" aria-hidden="true">
+        <path d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+        <path d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+      </svg>
+      <span class="trust-text">ייעוץ אישי</span>
+    </div>
   </div>
 </section>
 
@@ -455,7 +762,7 @@
     <div class="index-categories-grid">
       <div class="index-categories-card">
         <div class="index-categories-icon-badge">
-          <svg data-element-type="icon" data-icon-type="svg" width="32" height="32" viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg data-element-type="icon" data-icon-type="svg" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M4 12L8 10V20L4 22V12Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
             <path d="M8 10L16 6L24 10L16 14L8 10Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
             <path d="M24 10V20L28 22V12L24 10Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -471,7 +778,7 @@
 
       <div class="index-categories-card">
         <div class="index-categories-icon-badge">
-          <svg data-element-type="icon" data-icon-type="svg" width="32" height="32" viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg data-element-type="icon" data-icon-type="svg" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect x="4" y="14" width="24" height="10" rx="1" stroke="currentColor" stroke-width="1.5"></rect>
             <path d="M8 14V10C8 9.44772 8.44772 9 9 9H23C23.5523 9 24 9.44772 24 10V14" stroke="currentColor" stroke-width="1.5"></path>
             <path d="M6 24V26" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
@@ -489,7 +796,7 @@
 
       <div class="index-categories-card">
         <div class="index-categories-icon-badge">
-          <svg data-element-type="icon" data-icon-type="svg" width="32" height="32" viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg data-element-type="icon" data-icon-type="svg" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect x="6" y="12" width="20" height="12" rx="1" stroke="currentColor" stroke-width="1.5"></rect>
             <path d="M6 16H26" stroke="currentColor" stroke-width="1.5"></path>
             <path d="M10 12V8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
@@ -506,7 +813,7 @@
 
       <div class="index-categories-card">
         <div class="index-categories-icon-badge">
-          <svg data-element-type="icon" data-icon-type="svg" width="32" height="32" viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg data-element-type="icon" data-icon-type="svg" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect x="6" y="6" width="20" height="20" rx="1" stroke="currentColor" stroke-width="1.5"></rect>
             <path d="M6 13H26" stroke="currentColor" stroke-width="1.5"></path>
             <path d="M6 19H26" stroke="currentColor" stroke-width="1.5"></path>
@@ -523,7 +830,7 @@
 
       <div class="index-categories-card">
         <div class="index-categories-icon-badge">
-          <svg data-element-type="icon" data-icon-type="svg" width="32" height="32" viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg data-element-type="icon" data-icon-type="svg" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect x="8" y="14" width="16" height="10" rx="1" stroke="currentColor" stroke-width="1.5"></rect>
             <path d="M12 24V26" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
             <path d="M20 24V26" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
@@ -541,7 +848,7 @@
 
       <div class="index-categories-card">
         <div class="index-categories-icon-badge">
-          <svg data-element-type="icon" data-icon-type="svg" width="32" height="32" viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg data-element-type="icon" data-icon-type="svg" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="16" cy="10" r="4" stroke="currentColor" stroke-width="1.5"></circle>
             <path d="M8 28C8 22.4772 12.4772 18 18 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
             <path d="M24 28C24 22.4772 19.5228 18 14 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
@@ -560,9 +867,9 @@
   </div>
   
   <div class="index-categories-divider-wrapper">
-    <svg data-no-icon-edit="true" aria-hidden="true" viewbox="0 0 1200 2" preserveaspectratio="none" xmlns="http://www.w3.org/2000/svg">
+    <svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 1200 2" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
       <defs>
-        <pattern id="dotPattern" x="0" y="0" width="8" height="2" patternunits="userSpaceOnUse">
+        <pattern id="dotPattern" x="0" y="0" width="8" height="2" patternUnits="userSpaceOnUse">
           <circle cx="4" cy="1" r="0.8" fill="var(--border-light)"></circle>
         </pattern>
       </defs>
@@ -637,7 +944,7 @@
 
   <!-- Bottom Divider: Torn Paper Edge -->
   <div class="index-showcase-divider-wrapper">
-    <svg data-no-icon-edit="true" aria-hidden="true" viewbox="0 0 1200 60" preserveaspectratio="none" xmlns="http://www.w3.org/2000/svg">
+    <svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 1200 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M0,60 L0,25 Q30,22 60,28 T120,24 Q150,28 180,22 T240,26 Q270,24 300,28 T360,22 Q390,26 420,24 T480,28 Q510,22 540,26 T600,24 Q630,28 660,22 T720,26 Q750,24 780,28 T840,22 Q870,26 900,24 T960,28 Q990,22 1020,26 T1080,24 Q1110,28 1140,22 T1200,26 L1200,60 Z" fill="var(--bg-light)"></path>
     </svg>
   </div>
@@ -651,19 +958,19 @@
       <!-- Testimonial 1 -->
       <article class="index-testimonials-section__card">
         <div class="index-testimonials-section__stars" aria-label="דירוג 5 כוכבים">
-          <svg data-element-type="icon" data-icon-type="svg" width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg data-element-type="icon" data-icon-type="svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M8 1.5L9.708 5.708L14 6.5L11 9.792L11.416 14L8 12.208L4.584 14L5 9.792L2 6.5L6.292 5.708L8 1.5Z" fill="currentColor"></path>
           </svg>
-          <svg data-element-type="icon" data-icon-type="svg" width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg data-element-type="icon" data-icon-type="svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M8 1.5L9.708 5.708L14 6.5L11 9.792L11.416 14L8 12.208L4.584 14L5 9.792L2 6.5L6.292 5.708L8 1.5Z" fill="currentColor"></path>
           </svg>
-          <svg data-element-type="icon" data-icon-type="svg" width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg data-element-type="icon" data-icon-type="svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M8 1.5L9.708 5.708L14 6.5L11 9.792L11.416 14L8 12.208L4.584 14L5 9.792L2 6.5L6.292 5.708L8 1.5Z" fill="currentColor"></path>
           </svg>
-          <svg data-element-type="icon" data-icon-type="svg" width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg data-element-type="icon" data-icon-type="svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M8 1.5L9.708 5.708L14 6.5L11 9.792L11.416 14L8 12.208L4.584 14L5 9.792L2 6.5L6.292 5.708L8 1.5Z" fill="currentColor"></path>
           </svg>
-          <svg data-element-type="icon" data-icon-type="svg" width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg data-element-type="icon" data-icon-type="svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M8 1.5L9.708 5.708L14 6.5L11 9.792L11.416 14L8 12.208L4.584 14L5 9.792L2 6.5L6.292 5.708L8 1.5Z" fill="currentColor"></path>
           </svg>
         </div>
@@ -675,19 +982,19 @@
       <!-- Testimonial 2 -->
       <article class="index-testimonials-section__card">
         <div class="index-testimonials-section__stars" aria-label="דירוג 5 כוכבים">
-          <svg data-element-type="icon" data-icon-type="svg" width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg data-element-type="icon" data-icon-type="svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M8 1.5L9.708 5.708L14 6.5L11 9.792L11.416 14L8 12.208L4.584 14L5 9.792L2 6.5L6.292 5.708L8 1.5Z" fill="currentColor"></path>
           </svg>
-          <svg data-element-type="icon" data-icon-type="svg" width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg data-element-type="icon" data-icon-type="svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M8 1.5L9.708 5.708L14 6.5L11 9.792L11.416 14L8 12.208L4.584 14L5 9.792L2 6.5L6.292 5.708L8 1.5Z" fill="currentColor"></path>
           </svg>
-          <svg data-element-type="icon" data-icon-type="svg" width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg data-element-type="icon" data-icon-type="svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M8 1.5L9.708 5.708L14 6.5L11 9.792L11.416 14L8 12.208L4.584 14L5 9.792L2 6.5L6.292 5.708L8 1.5Z" fill="currentColor"></path>
           </svg>
-          <svg data-element-type="icon" data-icon-type="svg" width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg data-element-type="icon" data-icon-type="svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M8 1.5L9.708 5.708L14 6.5L11 9.792L11.416 14L8 12.208L4.584 14L5 9.792L2 6.5L6.292 5.708L8 1.5Z" fill="currentColor"></path>
           </svg>
-          <svg data-element-type="icon" data-icon-type="svg" width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg data-element-type="icon" data-icon-type="svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M8 1.5L9.708 5.708L14 6.5L11 9.792L11.416 14L8 12.208L4.584 14L5 9.792L2 6.5L6.292 5.708L8 1.5Z" fill="currentColor"></path>
           </svg>
         </div>
@@ -699,19 +1006,19 @@
       <!-- Testimonial 3 -->
       <article class="index-testimonials-section__card">
         <div class="index-testimonials-section__stars" aria-label="דירוג 5 כוכבים">
-          <svg data-element-type="icon" data-icon-type="svg" width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg data-element-type="icon" data-icon-type="svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M8 1.5L9.708 5.708L14 6.5L11 9.792L11.416 14L8 12.208L4.584 14L5 9.792L2 6.5L6.292 5.708L8 1.5Z" fill="currentColor"></path>
           </svg>
-          <svg data-element-type="icon" data-icon-type="svg" width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg data-element-type="icon" data-icon-type="svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M8 1.5L9.708 5.708L14 6.5L11 9.792L11.416 14L8 12.208L4.584 14L5 9.792L2 6.5L6.292 5.708L8 1.5Z" fill="currentColor"></path>
           </svg>
-          <svg data-element-type="icon" data-icon-type="svg" width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg data-element-type="icon" data-icon-type="svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M8 1.5L9.708 5.708L14 6.5L11 9.792L11.416 14L8 12.208L4.584 14L5 9.792L2 6.5L6.292 5.708L8 1.5Z" fill="currentColor"></path>
           </svg>
-          <svg data-element-type="icon" data-icon-type="svg" width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg data-element-type="icon" data-icon-type="svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M8 1.5L9.708 5.708L14 6.5L11 9.792L11.416 14L8 12.208L4.584 14L5 9.792L2 6.5L6.292 5.708L8 1.5Z" fill="currentColor"></path>
           </svg>
-          <svg data-element-type="icon" data-icon-type="svg" width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg data-element-type="icon" data-icon-type="svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M8 1.5L9.708 5.708L14 6.5L11 9.792L11.416 14L8 12.208L4.584 14L5 9.792L2 6.5L6.292 5.708L8 1.5Z" fill="currentColor"></path>
           </svg>
         </div>
@@ -724,7 +1031,7 @@
 
   <!-- Bottom divider: smooth gradient fade to dark -->
   <div class="index-testimonials-section__divider-wrapper">
-    <svg data-no-icon-edit="true" aria-hidden="true" viewbox="0 0 1200 120" preserveaspectratio="none" xmlns="http://www.w3.org/2000/svg">
+    <svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 1200 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
       <defs>
         <linearGradient id="testimonials-fade-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
           <stop offset="0%" stop-color="#E6E2DC" stop-opacity="0"></stop>
