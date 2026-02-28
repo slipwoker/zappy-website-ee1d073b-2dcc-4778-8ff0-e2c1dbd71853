@@ -1,0 +1,79 @@
+# Business — Generative Engine Optimization Map
+
+---
+
+## Pages
+
+### בית
+https://example.com
+גלו רהיטים מודרניים ומעוצבים במיוחד לדירות עירוניות קטנות. עיצוב חכם, איכות גבוהה ומחירים הוגנים. משלוח מהיר לכל הארץ!
+
+### קולקציות
+https://example.com/collections
+עיינו בקולקציות הרהיטים המעוצבות שלנו: סלון, חדר שינה, פינת אוכל ועוד. רהיטים ידידותיים לסביבה המשלבים סטייל ופונקציונליות מושלמת.
+
+### מוצר
+https://example.com/product
+כל הפרטים על המוצר שבחרתם: מידות מדויקות, חומרים איכוtiים, אפשרויות התאמה אישית ומחיר סופי ללא הפתעות. הזמינו עכשיו בקלות!
+
+### צור קשר
+https://example.com/contact
+צריכים עזרה בבחירת הרהיטים המושלמים? צרו קשר עם המומחים שלנו לייעוץ אישי חינם. זמינים בטלפון, וואטסאפ ומייל - נשמח לעזור!
+
+### Products
+https://example.com/products
+המוצרים שלנו - רהיטי סימפל
+
+### Cart
+https://example.com/cart
+עגלת הקניות שלך
+
+### Checkout
+https://example.com/checkout
+תשלום
+
+### Login
+https://example.com/login
+התחברות לקוחות
+
+### Account
+https://example.com/account
+החשבון שלי
+
+### Order Success
+https://example.com/order-success
+תודה על ההזמנה
+
+### Product Detail
+https://example.com/product/:slug
+פרטי המוצר - רהיטי סימפל
+
+### Category
+https://example.com/category/:slug
+מוצרים - רהיטי סימפל
+
+## Legal & Policy
+
+### Privacy Policy
+https://example.com/privacy
+Information about how user data is collected, stored, and protected.
+
+### Terms & Conditions
+https://example.com/terms
+Legal terms describing service usage, rights, and policies.
+
+### Accessibility Statement
+https://example.com/accessibility
+Information about WCAG compliance and accessibility features.
+
+---
+
+# Business Context (for LLM understanding)
+
+## About Business
+---
+
+# Additional Resources
+
+- **Sitemap**: https://example.com/sitemap.xml
+- **Robots.txt**: https://example.com/robots.txt
