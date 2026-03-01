@@ -221,8 +221,6 @@
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
     <!-- Favicons -->
     <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
@@ -236,6 +234,287 @@
     <script src="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.umd.js"></script>
     <!-- Mickidum Accessibility Toolbar -->
     <script src="https://cdn.jsdelivr.net/gh/mickidum/acc_toolbar/acctoolbar/acctoolbar.min.js"></script>
+
+<style data-zappy-section-v2-css="true">
+/* V2 Regenerated Section CSS */
+.index-hero-section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: visible;
+  background-color: #1F2A44;
+  color: var(--text-light);
+}
+
+/* Background Image Layer */
+.index-hero-section .hero-bg-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.index-hero-section .hero-bg-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: saturate(0.95) contrast(0.95);
+}
+
+/* Scrim Overlay for Text Legibility */
+.index-hero-section .hero-scrim {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(31, 42, 68, 0.25) 0%, rgba(31, 42, 68, 0.75) 60%, rgba(31, 42, 68, 0.85) 100%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Content Overlay */
+.index-hero-section .hero-content-wrapper {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.index-hero-section .hero-content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  max-width: 900px;
+}
+
+/* Text Group */
+.index-hero-section .hero-text-group {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+
+.index-hero-section .hero-headline {
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: var(--text-light);
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.4), 0 2px 8px rgba(0, 0, 0, 0.3);
+  margin: 0;
+}
+
+.index-hero-section .hero-subtitle {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.6;
+  color: var(--text-light);
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+  margin: 0;
+  opacity: 0.95;
+}
+
+/* CTA Group */
+.index-hero-section .hero-cta-group {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.index-hero-section .hero-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 32px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 280ms ease;
+  white-space: nowrap;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.index-hero-section .btn-primary {
+  background: var(--primary);
+  color: var(--text-light);
+  border: 2px solid var(--primary);
+  box-shadow: 0 4px 16px rgba(47, 107, 255, 0.3);
+}
+
+.index-hero-section .btn-primary:hover {
+  background: #1E5DB8;
+  border-color: #1E5DB8;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(47, 107, 255, 0.4);
+}
+
+.index-hero-section .btn-secondary {
+  background: rgba(255, 255, 255, 0.15);
+  color: var(--text-light);
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.index-hero-section .btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.25);
+  border-color: rgba(255, 255, 255, 0.6);
+  transform: translateY(-2px);
+}
+
+.index-hero-section .cta-icon {
+  width: 20px;
+  height: 20px;
+  transition: transform 280ms ease;
+}
+
+.index-hero-section .btn-primary:hover .cta-icon {
+  transform: translateX(-3px);
+}
+
+/* Trust Indicators Strip */
+.index-hero-section .hero-trust-strip {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-top: 1px solid var(--border-light);
+  padding: 20px 32px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  z-index: 15;
+}
+
+.index-hero-section .trust-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text-dark);
+}
+
+.index-hero-section .trust-icon {
+  width: 24px;
+  height: 24px;
+  color: var(--primary);
+  flex-shrink: 0;
+}
+
+.index-hero-section .trust-text {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-dark);
+  white-space: nowrap;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .index-hero-section {
+    min-height: 100vh;
+  }
+  
+  .index-hero-section .hero-content-wrapper {
+    padding: 100px 16px 140px;
+    min-height: 100vh;
+  }
+  
+  .index-hero-section .hero-content-container {
+    gap: 32px;
+  }
+  
+  .index-hero-section .hero-text-group {
+    gap: 16px;
+  }
+  
+  .index-hero-section .hero-headline {
+    font-size: 36px;
+    line-height: 1.2;
+  }
+  
+  .index-hero-section .hero-subtitle {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  .index-hero-section .hero-cta-group {
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+  }
+  
+  .index-hero-section .hero-cta {
+    width: 100%;
+    padding: 14px 24px;
+    font-size: 15px;
+  }
+  
+  .index-hero-section .hero-trust-strip {
+    padding: 16px;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+  
+  .index-hero-section .trust-item {
+    gap: 8px;
+  }
+  
+  .index-hero-section .trust-icon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .index-hero-section .trust-text {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .index-hero-section .hero-headline {
+    font-size: 32px;
+  }
+  
+  .index-hero-section .hero-subtitle {
+    font-size: 15px;
+  }
+  
+  .index-hero-section .hero-trust-strip {
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+  }
+}
+</style>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="/styles.css">
 
     <style id="zappy-dropdown-submenu-styles">
@@ -306,10 +585,10 @@
       <div class="search-wrapper">
         <input type="text" id="mobile-search-input" placeholder="חיפוש מוצרים..." autocomplete="off">
         <button class="search-submit" id="mobile-search-submit" title="חיפוש">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><path d="M21 21l-4.35-4.35"></path></svg>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
         </button>
         <button class="close-search" id="close-mobile-search">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"></path></svg>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
         </button>
       </div>
       <div class="search-results" id="mobile-search-results"></div>
@@ -351,13 +630,13 @@
         <!-- Categories will be loaded dynamically -->
       </ul>
     </li>
-  <li><a href="/collections">קולקציות</a></li><li><a href="/product">מוצר</a></li><li><a href="/contact">צור קשר</a></li></ul><div class="nav-ecommerce-icons nav-icons-left"><a href="/login" class="login-link nav-login" title="התחברות"><svg class="login-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg></a><a href="#cart" class="cart-link nav-cart" id="cart-drawer-toggle" title="עגלת קניות"><svg class="cart-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg><span class="cart-count">0</span></a><div class="nav-search-box">
+  <li><a href="/collections">קולקציות</a></li><li><a href="/product">מוצר</a></li><li><a href="/contact">צור קשר</a></li></ul><div class="nav-ecommerce-icons nav-icons-left"><a href="/login" class="login-link nav-login" title="התחברות"><svg class="login-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></a><a href="#cart" class="cart-link nav-cart" id="cart-drawer-toggle" title="עגלת קניות"><svg class="cart-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg><span class="cart-count">0</span></a><div class="nav-search-box">
     <input type="text" class="nav-search-input" id="nav-search-input" placeholder="חיפוש מוצרים..." autocomplete="off">
     <button class="nav-search-btn" id="nav-search-btn" title="חיפוש">
-      <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><path d="M21 21l-4.35-4.35"></path></svg>
+      <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
     </button>
     <div class="nav-search-results" id="nav-search-results"></div>
-  </div></div><div class="nav-ecommerce-icons nav-icons-right"><button class="nav-search-toggle" id="mobile-search-toggle" title="חיפוש"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><path d="M21 21l-4.35-4.35"></path></svg></button></div>
+  </div></div><div class="nav-ecommerce-icons nav-icons-right"><button class="nav-search-toggle" id="mobile-search-toggle" title="חיפוש"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg></button></div>
     
     
   </div>
@@ -375,7 +654,7 @@
 <section class="legal-page-content return-policy">
   <div class="container">
     <h1>מדיניות החזרת מוצרים</h1>
-    <p class="last-updated"><strong>עדכון אחרון:</strong> 28.2.2026</p>
+    <p class="last-updated"><strong>עדכון אחרון:</strong> 1.3.2026</p>
     
     <p>רהיטי סימפל מחויבת לשביעות רצון לקוחותיה. מדיניות זו מפרטת את זכויותיכם להחזרת מוצרים בהתאם לחוק הגנת הצרכן.</p>
 
@@ -402,8 +681,8 @@
     <div class="contact-box">
       <p>לביצוע החזרה או לשאלות:</p>
       <p><strong>אימייל:</strong> <a href="mailto:m.mslm@icloud.com">m.mslm@icloud.com</a></p>
-      <p><strong>טלפון:</strong> <a href="tel:036307450">03-6307450</a></p>
-      <p><strong>כתובת:</strong> התחיה 17, תל אביב-יפו , ישראל</p>
+      <p><strong>טלפון:</strong> <a href="tel:03-6307450">03-6307450</a></p>
+      <p><strong>כתובת:</strong> התחיה 17, תל אביב-יפו,</p>
     </div>
   </div>
 </section>
@@ -476,7 +755,7 @@
   <div class="cart-drawer-header">
     <h2>עגלת הקניות שלך</h2>
     <button type="button" class="cart-drawer-close" id="cart-drawer-close" aria-label="סגור">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"></path></svg>
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
     </button>
   </div>
   <div class="cart-drawer-body" id="cart-drawer-items">
@@ -569,8 +848,6 @@
     }
   })();
   </script>
-    <div data-integration="accessibility:toolbar"></div>
-
 
     <script src="/script.js"></script>
 
